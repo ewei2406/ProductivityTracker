@@ -1,0 +1,30 @@
+DELETE http://localhost:3001/api/ToDoList/0
+###
+GET http://localhost:3001/api/ToDoList
+###
+POST http://localhost:3001/api/ToDoList
+Content-Type: application/json
+
+{
+    "Name": "awdwad",
+    "Description": "adwadwdwad"
+}
+###
+POST http://localhost:3001/api/ToDoList/functions/move
+Content-Type: application/json
+
+{
+    "takeFrom": 2,
+    "insertBefore": 0
+}
+###
+PUT http://localhost:3001/api/ToDoList/0
+Content-Type: application/json
+
+{
+    "Title": "Wash dishes awdawdwad",
+    "Description": "Go to the kitchen and wash the dishes",
+    "DateCreated": "2021-09-09",
+    "DateDue": "",
+    "Status": "Working"
+  }
